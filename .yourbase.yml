@@ -3,6 +3,7 @@ build_targets:
   - chmod +x ./gradlew
   - ./gradlew androidDependencies
   - ./gradlew :app:assembleDebug
+  - ./gradlew build
   container:
     image: yourbase/yb_ubuntu:18.04
   name: default
