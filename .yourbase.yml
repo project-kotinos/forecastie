@@ -1,0 +1,18 @@
+build_targets:
+- commands:
+  - chmod +x ./gradlew
+  - ./gradlew androidDependencies
+  - ./gradlew :app:assembleDebug
+  container:
+    image: yourbase/yb_ubuntu:18.04
+  name: default
+
+ci:
+  builds:
+  - build_target: default
+    name: default
+dependencies:
+  build:
+  - java:11.0.6
+  - gradle:6.5.1
+  - android:latest
