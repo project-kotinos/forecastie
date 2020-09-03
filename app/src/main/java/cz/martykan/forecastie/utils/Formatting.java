@@ -4,6 +4,8 @@ import android.content.Context;
 
 import cz.martykan.forecastie.R;
 
+/* A comment... */
+
 public class Formatting {
 
     private Context context;
